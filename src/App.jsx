@@ -18,6 +18,8 @@ function App() {
       console.log(queryKey);
      return [...POSTS]
     }),
+    refetchInterval : 2000,
+    // enabled: postQuery?.data?.userId != null
   });
 
   //implementing mutations
