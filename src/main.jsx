@@ -9,9 +9,10 @@ const queryClient = new QueryClient();
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
+    {/* Make queryClient accessible throughout the application */}
     <QueryClientProvider client={queryClient}>
       <App />
-      <ReactQueryDevtools/>
+      <ReactQueryDevtools />
     </QueryClientProvider>
   </React.StrictMode>
 );
